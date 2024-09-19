@@ -10,7 +10,7 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
     document.getElementById('pin-input').value = '';
     document.getElementById('input-phone').value = '';
 
-    if (pNumber === 1122 && pinNum === 'asd') {
+    if (pNumber === 967287131 && pinNum === 'asd') {
         window.location.href = 'trangection.html';
 
     }
