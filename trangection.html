@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Many trangection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center items-center bg-slate-500 h-screen">
+
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-1">
+                    <div class="flex flex-col items-center mt-4">
+                        <h1 id="blance" class="text-4xl font-bold">100</h1>
+                        <p class="text-sm font-bold">blance</p>
+                    </div>
+
+                    <div class="flex justify-between gap-5 my-5">
+                        <button id="add-btn" class="btn btn-neutral bg-slate-500 active:bg-white active:text-black">Add
+                            Mony</button>
+                        <button id="cash-btn"
+                            class="btn btn-neutral bg-slate-500 active:bg-white active:text-black">Cash Out</button>
+                    </div>
+
+
+                    <div id="Add-Mony-sec" class="hero hidden">
+                        <div class="hero-content flex-col">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="amount" type="text" placeholder="Enter your amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">PIN</span>
+                                        </label>
+                                        <input id="Pin" type="password" placeholder="Enter your PIN"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="Add-Mony" class="btn btn-primary">Add Mony</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="Cash-out-sec" class="hero">
+                        <div class="hero-content flex-col">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="amount2" type="text" placeholder="Enter your amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">PIN</span>
+                                        </label>
+                                        <input id="Pin2" type="password" placeholder="Enter your PIN"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="cash-out" class="btn btn-primary">Cash Out</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="src/addmony.js"></script>
+    <script src="src/cashout.js"></script>
+    <script src="src/btn-change.js"></script>
+</body>
+
+</html>
